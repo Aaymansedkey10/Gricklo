@@ -108,7 +108,6 @@
 .links {
     display: flex;
     align-items: center;
-
     list-style: none;
     margin-right: 50px;
     position: relative;
@@ -129,11 +128,12 @@
     font-size: 16px;
     font-weight: 600;
     box-shadow: inset 0 0 0 #212529;
-    transition: ease-in-out 0.2s;
+    transition: all 0.2s ease-in-out ;
 }
 .Btn-nav:hover {
     box-shadow: inset 130px 0px 0px 0px #212529;
     cursor: pointer;
+    border: 1px solid #4DB7FE;
 }
 .last{
     margin-left: 30px;
@@ -151,7 +151,7 @@
 }
 .list {
     background-color: #0a58cade;
-    width: 100px;
+    width: 110px;
     padding: 10px 5px 10px 10px;
     list-style: none;
     line-height: 1.75;
@@ -161,6 +161,10 @@
     left: 0px;
     color: #fff;
     display: none;
+}
+.list li:hover {
+    transform: translateX(5px);
+    transition: all 0.5s ease-in-out;
 }
 
 .drop-down:hover {
@@ -935,16 +939,16 @@
     color: #4DB7FE;
 }
 /* end footer section   */
-@media  only screen and (max-width:1024px){
+@media  only screen and (max-width:1025px){
     .main , section , .intersted ,.pop-section ,.work , .pepole ,.FOOT{
         overflow: hidden;
     }
     .search {
-        margin-left: 30px;
-        width: 240px;
+        margin-left: 10px;
+        width: 170px;
     }
     .search input {
-        width: 280px;
+        width: 170px;
     }
     .links {
         margin: 0px;
